@@ -8,6 +8,10 @@ app.get("/random", (req, res) => {
   res.json(randomObject);
 });
 
+app.get("/", (req, res) => {
+  res.send('<h1>Hello! Goto this endpoint "/random" </h1>');
+});
+
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
