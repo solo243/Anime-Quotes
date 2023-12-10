@@ -12,7 +12,7 @@ app.get("/", (req, res) => {
   res.send('<h1>Hello! Goto this endpoint "/random" </h1>');
 });
 
-const PORT = process.env.PORT || 5000;
+const PORT = 3000;
 
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
